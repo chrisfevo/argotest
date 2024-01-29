@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/chrisfevo/argotest.git
-    path: root-app/
+    path: charts/root-app/
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
