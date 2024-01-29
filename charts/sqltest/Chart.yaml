@@ -1,0 +1,4 @@
+apiVersion: v2
+description: sqltest
+name: sqltest
+version: 0.0.1

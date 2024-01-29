@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqltest-deployment
+  labels:
+    app: sqltest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sqltest
+  template:
+    metadata:
+      labels:
+        app: sqltest
+    spec:
+      #hostNetwork: true
+      containers:
+        - name: sqltest
+          image: mcr.microsoft.com/mssql-tools
+          command: [ "/bin/sh", "-c", "--" ]
+          args: [ "sleep 99999;" ]

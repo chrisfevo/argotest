@@ -22,7 +22,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/chrisfevo/argotest.git
-    path: charts/busybox
+    path: charts/sqltest
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
