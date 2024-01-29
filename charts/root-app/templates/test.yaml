@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometheus
+  name: busybox
   annotations:
     # To send Slack notifications when a resource is deleted in Argo CD.
     notifications.argoproj.io/subscribe.on-deleted.slack: cdtest
