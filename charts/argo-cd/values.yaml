@@ -2,7 +2,13 @@ argo-cd:
   dex:
     enabled: false
   notifications:
-    enabled: false
+    secret:
+      create: true
+      items:
+        slack-token: xoxb-23078813079-6519189431239-MdXYqQrk7MnIbxDWuDsxKOA5
+    notifiers:
+      service.slack: |
+        token: $slack-token
   applicationSet:
     enabled: false
   server:
