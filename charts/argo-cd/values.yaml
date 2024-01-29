@@ -1,4 +1,5 @@
 argo-cd:
+  namespace: default
   dex:
     enabled: false
   notifications:
