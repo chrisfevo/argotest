@@ -4,6 +4,19 @@ metadata:
   name: prometheus
   finalizers:
     - resources-finalizer.argocd.argoproj.io
+annotations:
+  # To send Slack notifications when a resource is deleted in Argo CD.
+  notifications.argoproj.io/subscribe.on-deleted.slack: cdtest
+  # To send Slack notifications when a deployment is completed in Argo CD.
+  notifications.argoproj.io/subscribe.on-deployed.slack: cdtest
+  # To send Slack notifications when the health of a resource degrades in Argo CD.
+  notifications.argoproj.io/subscribe.on-health-degraded.slack: cdtest
+  # To send Slack notifications when a synchronization fails in Argo CD.
+  notifications.argoproj.io/subscribe.on-sync-failed.slack: cdtest
+  # To send Slack notifications when the synchronization status becomes unknown in Argo CD.
+  notifications.argoproj.io/subscribe.on-sync-status-unknown.slack: cdtest
+  # To send Slack notifications when a synchronization succeeds in Argo CD.
+  notifications.argoproj.io/subscribe.on-sync-succeeded.slack: cdtest
 spec:
   project: default
   source:
