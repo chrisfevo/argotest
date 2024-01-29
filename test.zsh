@@ -8,6 +8,7 @@ helm upgrade --install argocd . -n argocd
 $ kubectl port-forward svc/argo-cd-argocd-server 8080:443
 $ kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 7gE4Y-SeqmDsrw0n
+mLDFQSCe4lpm9LMJ
 
  helm template root-app/ | kubectl apply -f -
 
