@@ -241,7 +241,7 @@ argo-cd:
        - recipients:
          - slack:test630
          triggers:
-         - on-sync-succeeded
+         - on-deployed
       # # subscription restricted to applications with matching labels only
       # - recipients:
       #   - slack:test3
