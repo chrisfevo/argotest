@@ -91,9 +91,9 @@ argo-cd:
     # environmentName: staging
 
     secret:
-      create: false
+      create: true
       items:
-        slack-token:
+        slack-token: xoxb-42810081460-6566946933697-mSykH0fdbC6k3OhAEmNhRAa8
 
     metrics:
       # -- Enables prometheus metrics server

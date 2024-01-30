@@ -7,7 +7,7 @@ helm dependency build
 helm upgrade --install argo-cd . -f values.yaml
 helm template root-app/ | kubectl apply -f -
 kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
-kubectl port-forward svc/argo-cd-argocd-server 8084:80
+kubectl port-forward svc/argo-cd-argocd-server 8086:80
 PX-BHtwmhfqoxpAQ
 
 argocd admin notifications template notify app-sync-succeeded sqltest
