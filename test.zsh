@@ -10,3 +10,4 @@ kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | 
 kubectl port-forward svc/argo-cd-argocd-server 8084:80
 PX-BHtwmhfqoxpAQ
 
+argocd admin notifications template notify app-sync-succeeded sqltest

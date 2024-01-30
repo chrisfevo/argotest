@@ -93,7 +93,7 @@ argo-cd:
     secret:
       create: true
       items:
-        slack-token: xoxb-42810081460-6556084144356-ysG5BhefdrZWuhMhl2dKekH1
+        slack-token: xoxb-42810081460-6556084144356-2Pq3cInHJ6WJKPy6x8S5pMoJ
 
     metrics:
       # -- Enables prometheus metrics server
