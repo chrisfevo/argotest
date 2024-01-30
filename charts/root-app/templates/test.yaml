@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: sqltest
   annotations:
-    notifications.argoproj.io/subscribe.on-deployed.slack: cdtest
+    notifications.argoproj.io/subscribe.on-deployed.slack: test630
 {{/*    # To send Slack notifications when a resource is deleted in Argo CD.*/}}
 {{/*    notifications.argoproj.io/subscribe.on-deleted.slack: cdtest*/}}
 {{/*    # To send Slack notifications when a deployment is completed in Argo CD.*/}}
